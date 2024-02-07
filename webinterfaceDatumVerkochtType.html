@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gegevens Veranderen - Balaji Fastfood Sales</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Balaji Fastfood fffSales</h1>
+        <h2>Datum verkocht type oproepen</h2>
+    </header>
+
+    <main>
+        <INPUT TYPE='submit' NAME='verzenden' VALUE='Datum verkocht type oproepen'>
+    </main>
+
+    <?php
+    while($rij = mysqli_fetch_array($result)) {
+    echo "<tr>
+        ";
+        echo "
+        <td>".$rij['Player']."</td>";
+        echo "
+        <td>".$rij['Country']."</td>";
+        echo "
+        <td>".$rij['Age']."</td>";
+        echo "
+        <td>".$rij['Value']."</td>";
+        echo "
+    </tr>";
+</body>
+</html>

@@ -1,0 +1,65 @@
+    /* Opmaak voor alle pagina's: lettertype, achtergrondkleur, plaats waar tekst terechtkomt */
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    }
+
+    /* Opmaak voor de kop van de pagina */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+    }
+
+    /* Opmaak voor  h1 */
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    /* Opmaak voor alinea's  */
+    p {
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+
+    /* Opmaak voor buttons + vervaging hoveren over button*/
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+        /* Opmaak voor buttons als je er over hovert */
+        button:hover {
+            background-color: #09458f;
+        }
+        /* Container flexbox maken en de flex-direction aanduiden */
+    .mycontainer {
+        display: flex;
+        flex-direction: row;
+    }
+        /* Grootte van een div aanduiden*/
+        .mycontainer > div {
+            width: 20%;
+        }
+
+    /* Wanneer scherm geminimaliseerd wordt past de pagina zichzelf aan */
+    @media screen and (max-width: 720px) {
+        .mycontainer {
+            display: flex;
+            flex-direction: column;
+        }
+            .mycontainer > div {
+                width: 100%;
+            }
+    }
+
